@@ -1,6 +1,6 @@
 import {PrismaClient, User} from "@prisma/client";
 import checkLogin from "@/app/api/check_login";
-import {dirtyCache} from "@/app/api/data/route";
+import {dirtyCache} from "@/app/api/cache";
 
 export const dynamic = 'force-dynamic'
 
