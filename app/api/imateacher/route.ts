@@ -1,8 +1,7 @@
 import {PrismaClient} from '@prisma/client';
-import {NextApiRequest} from "next";
 export const dynamic = 'force-dynamic'
 
-export async function GET(request: NextApiRequest) {
+export async function GET(request: Request) {
     if (request.url) {
         let {searchParams} = new URL(request.url)
         let login = searchParams.get('login')
